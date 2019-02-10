@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+    <title>Map Viewer</title>
+  </head>
+  <body>
+      <div style="height:100%; width:100%;">
+          <div id="map"></div>
+     </div> 
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/viewer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVzUXlK3cb53txsKt53W6sgUfKQG_KvXI&callback=initMap" 
+    async defer></script>
+  </body>
+</html>
